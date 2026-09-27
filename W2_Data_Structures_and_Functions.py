@@ -102,8 +102,25 @@ print(age)
 print(student)
 
 
-#Dictionary 
+#Dictionary : Dictories store data as Key value pair.
+student = {
+    "name" : "Shivam",
+    "age"  : 17,
+    "roll no" : 32
+}
+# Accessing the value
+print(student["name"])  #print(student.get('name'))
+print(student["age"])
+print(student["roll no"])
 
+#Add value
+student["city"] = "Delhi"
+print(student["city"])
+
+#Updating value
+student["roll no"] = 43
+print(student["roll no"])
+#Sets
 
 
 
