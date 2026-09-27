@@ -102,6 +102,11 @@ print(age)
 print(student)
 
 
+#Dictionary 
+
+
+
+
 # Functions
 #Defining it (A function is a reusable block of code designed to perform a specific task.)
 

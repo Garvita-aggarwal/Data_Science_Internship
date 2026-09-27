@@ -8,3 +8,5 @@
 #Nested list comprehension
 #Dictionary comprehension
 #Set comprehension
+
+#Theory: Learn about Matplotlib (basic plots) and Seaborn (advanced plots like heatmaps, pairplots).

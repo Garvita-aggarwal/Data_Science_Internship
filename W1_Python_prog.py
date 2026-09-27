@@ -1,3 +1,4 @@
+#Theory: Study Python variables, data types, operators, input/output, conditional statements (if-else), loops (for, while).
 ## Week 1: Introduction to Python Programming
 
 # Variables (Used to store values)
