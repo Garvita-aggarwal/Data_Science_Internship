@@ -120,8 +120,86 @@ print(student["city"])
 #Updating value
 student["roll no"] = 43
 print(student["roll no"])
-#Sets
 
+#Remove item
+student.pop("age")
+
+del student['city']
+
+# clear() Removes everything
+student.clear()
+
+#Dict Methods
+#keys()
+student = {
+    "name" : "G",
+    "age"  : 12,
+}
+print(student.keys())
+
+#values 
+print(student.values())
+
+#items
+print(student.items())
+
+#Looping through dict
+#Only Keys
+for key in student:
+    print(key)
+
+#only values
+for value in student.values():
+    print(value)
+
+#key and values
+for key,values in student.items():
+    print(key,value)
+
+#Sets (A set is a collection of unique values.)
+number = {10,20,30,40,20}
+print(numbers)
+
+#Set do not have index
+#Loop 
+for nummber in numbers:
+    print(number)
+
+#Add
+number = {10,20,30,40,20}
+number.add(40)
+print(number)
+#Remove
+number = {10,20,30,40,20}
+number.remove(20)
+print(number)  #Error if 20 does not exist
+
+#Discard
+number = {10,20,30,40,20}
+number.discard(50)
+print(number)
+
+#Pop
+number = {10,20,30,40,20}
+number.pop()
+print(number)
+
+#Set Operations
+#Union - Cobines two Sets
+a = {1,2,3}
+b = {3,4,5}
+c = a|b
+print(c)
+
+#Intersection 
+a = {1,2,3}
+b = {3,4,5}
+c = a & b
+print(c)
+#difference 
+print(a-b)
+#Symmetric Difference
+print(a^b)
 
 
 # Functions
@@ -177,17 +255,35 @@ def calculate_bill(price,tax=18):
     print("Total :",total)
     
 calculate_bill(1000)
-#Keyword arguments
+
 
 #Local vs global variables
 #*args
 #**kwargs
-#Lambda functions
 
+#Lambda functions - It is a small anonymous function written in one line
+
+#Syntax : lambda arguments: expression
+double = lambda x: x*2  #one argument
+print(double(10))
+
+#add
+add = lambda a,b: a+b
+print(add(10,20))
+
+#Multiple arguments
+calculate = lambda a,b,c:a+b+c
+print(calculate(10,20,30))
+
+#Lambda with if-else
+check = lambda x: "Even" if x % 2 == 0 else "Odd"
+print(check(10))
+print(check(7))
 
 #2. Strings
 #Indexing & slicing
-
+names =('Riya','Priya','Shreya','Anu')
+print(names[0])
 
 #upper(), lower(), capitalize()
 #strip()
@@ -199,3 +295,36 @@ calculate_bill(1000)
 #startswith() / endswith()
 #f-strings
 #String formatting
+
+#Recursion - Function calling itself
+def hello():             #Example
+    print('Hello')
+hello()
+
+#Printing no from 5 down to 1
+def countdown(n):
+    if n ==0:
+        return
+    print(n)
+    countdown(n-1)
+countdown(5)
+
+#Factorial  n! =n*(n-1)!
+def factorial(n):
+    if n == 1:
+        return 1
+
+    return n*factorial(n-1)
+print(factorial(5))
+
+#Fibonacci
+
+#List comprehension
+numbers = [1, 2, 3, 4, 5]
+
+squares = []
+
+for n in numbers:
+    squares.append(n * n)
+
+print(squares)
